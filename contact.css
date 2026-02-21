@@ -1,0 +1,131 @@
+* {
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+
+:root {
+    --bg: rgb(30, 30, 36);
+    --text: rgb(241, 232, 232);
+    --bg-light:rgb(24, 23, 23);
+    --muted:rgb(249, 244, 244);
+    --accent:rgb(51, 144, 188);
+}
+
+  body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  line-height: 1.6;
+  }
+
+  .contact-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.contact-info p {
+  color: var(--muted);
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.contact-info a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.contact-form {
+  background: var(--bg-light);
+  padding: 30px;
+  border-radius: 16px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  font-size: 0.85rem;
+  margin-bottom: 6px;
+  color: var(--muted);
+}
+
+.form-group input,
+.form-group textarea {
+  background: var(--bg);
+  border: 1px solid #1f2933;
+  border-radius: 8px;
+  padding: 12px;
+  color: var(--text);
+  font-family: inherit;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+  }
+}
+ 
+.send-btn {
+  background: linear-gradient(135deg, #4f46e5, #9333ea); 
+  color: #fff;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+
+.send-btn:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+  background: linear-gradient(135deg, #9333ea, #4f46e5); /* reverse gradient on hover */
+}
+
+
+.send-btn:active {
+  transform: translateY(0) scale(0.98);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+
+.send-btn:hover {
+  box-shadow: 0 10px 25px rgba(147,51,234,0.7), 0 0 12px #4f46e5;
+}
+
+.social-links a {
+  gap:20px;
+  width: 50px;        /* circle size */
+  height: 50px;
+  background: #1f1f1f; /* dark circle background */
+  border-radius: 50%;  /* makes it circular */
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social-links a img {
+  width: 24px; /* logo size inside the circle */
+  height: 24px;
+  border-radius: 0; /* logo stays rectangular inside circle */
+}
+
+.social-links a:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 12px var(--accent);
+}
