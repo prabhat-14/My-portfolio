@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product X – Landing Page</title>
+  <style>
+    /* Inline CSS for quick copy‑paste – you can move to a separate style.css */
+    :root { --primary: #6c63ff; --dark: #1a1a2e; --light: #f4f4f9; }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', sans-serif; background: var(--dark); color: var(--light); }
+    header { padding: 1.5rem 2rem; display: flex; justify-content: space-between; align-items: center; }
+    .logo { font-size: 1.5rem; font-weight: bold; color: var(--primary); }
+    .hero {
+      height: 85vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background: linear-gradient(135deg, #2e2e48 0%, #1a1a2e 100%);
+      padding: 0 1rem;
+    }
+    .hero h1 { font-size: 3.5rem; margin-bottom: 1rem; background: linear-gradient(90deg, #fff, #6c63ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .hero p { font-size: 1.25rem; max-width: 600px; margin-bottom: 2rem; color: #aaa; }
+    .cta-btn {
+      padding: 1rem 2.5rem;
+      background: var(--primary);
+      color: #fff;
+      border: none;
+      border-radius: 50px;
+      font-size: 1.1rem;
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .cta-btn:hover { transform: translateY(-3px); box-shadow: 0 8px 20px rgba(108,99,255,0.4); }
+    .features { padding: 5rem 2rem; max-width: 1200px; margin: 0 auto; }
+    .features h2 { text-align: center; margin-bottom: 3rem; font-size: 2.5rem; }
+    .feature-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; }
+    .feature-card {
+      background: #252540;
+      padding: 2rem;
+      border-radius: 12px;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .feature-card:hover { transform: translateY(-5px); box-shadow: 0 10px 30px rgba(0,0,0,0.3); }
+    .feature-icon { font-size: 2.5rem; margin-bottom: 1rem; }
+    .testimonials { padding: 5rem 2rem; background: #151525; text-align: center; }
+    .testimonial { max-width: 700px; margin: 0 auto 2rem; font-style: italic; color: #ccc; }
+    .testimonial strong { display: block; margin-top: 0.5rem; color: var(--primary); }
+    footer { padding: 2rem; text-align: center; color: #666; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">ProductX</div>
+    <a href="#contact" class="cta-btn" style="padding: 0.5rem 1.5rem; font-size:1rem;">Get Started</a>
+  </header>
+
+  <section class="hero">
+    <h1>Supercharge Your Workflow</h1>
+    <p>ProductX helps you automate repetitive tasks, track progress, and collaborate seamlessly – all in one intuitive platform.</p>
+    <button class="cta-btn" onclick="alert('Redirect to signup…')">Start Free Trial</button>
+  </section>
+
+  <section class="features">
+    <h2>Why Choose ProductX?</h2>
+    <div class="feature-grid">
+      <div class="feature-card">
+        <div class="feature-icon">🚀</div>
+        <h3>Fast Setup</h3>
+        <p>Get up and running in minutes with our guided onboarding.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🔒</div>
+        <h3>Secure</h3>
+        <p>Enterprise‑grade encryption keeps your data safe.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">📊</div>
+        <h
