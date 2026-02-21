@@ -1,0 +1,125 @@
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+ :root{
+  --bg: #0b0f14;
+  --bg-light: #121821;
+  --text: #e6e6eb;
+  --muted: #9aa4b2;
+  --accent: #7c7cff;
+ }
+ 
+    body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  line-height: 1.6;
+}
+ 
+.header {
+  width: 100%;
+  background-color: var(--bg);
+  border-bottom: 1px solid #1f2933;
+}
+
+.nav {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: var(--accent);
+}
+
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 80px 20px;
+}
+
+.hero {
+  max-width: 700px;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.05rem;
+  color: var(--muted);
+}
+
+.footer {
+  border-top: 1px solid #1f2933;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.footer p {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.hero-buttons {
+  margin-top: 30px;
+  display: flex;
+  gap: 20px;
+}
+
+.btn {
+  padding: 14px 28px;
+  border-radius: 30px;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn.primary {
+  background: var(--accent);
+  color: #fff;
+}
+
+.btn.primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(124,124,255,0.4);
+}
+
+.btn.secondary {
+  border: 1px solid var(--accent);
+  color: var(--accent);
+}
+
+.btn.secondary:hover {
+  background: var(--accent);
+  color: #fff;
+}
